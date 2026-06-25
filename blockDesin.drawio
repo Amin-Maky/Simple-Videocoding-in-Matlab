@@ -220,7 +220,7 @@
         <mxCell id="fi4_54166r1GfCqFi4zU-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;dashed=1;dashPattern=12 12;strokeColor=light-dark(#000000,#FF0000);" value="" vertex="1">
           <mxGeometry height="210" width="150" x="537.5" y="460" as="geometry" />
         </mxCell>
-        <mxCell id="fi4_54166r1GfCqFi4zU-12" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Simple Video Enciding in MATLAB&lt;/h1&gt;&lt;p&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 0, 0));&quot;&gt;ProcessBlock&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 0, 255));&quot;&gt;MotionEstimationCompensation&lt;/font&gt;&lt;/p&gt;" vertex="1">
+        <mxCell id="fi4_54166r1GfCqFi4zU-12" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Simple Video Encoding in MATLAB&lt;/h1&gt;&lt;p&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 0, 0));&quot;&gt;ProcessBlock&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font style=&quot;color: light-dark(rgb(0, 0, 0), rgb(0, 0, 255));&quot;&gt;MotionEstimationCompensation&lt;/font&gt;&lt;/p&gt;" vertex="1">
           <mxGeometry height="120" width="440" x="20" y="10" as="geometry" />
         </mxCell>
         <mxCell id="fi4_54166r1GfCqFi4zU-14" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;rotation=90;" value="&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;QuantizedCoeffs&lt;/span&gt;" vertex="1">
