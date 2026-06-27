@@ -1,5 +1,8 @@
 # Simple Video Encoding in Matlab
 
+![Video Encoding Block Design](BlockDesin.png)
+*Note: In the block diagram above, the components enclosed in colored dashed lines correspond to the specific MATLAB functions written in the matching colors (e.g., ProcessBlock, MotionEstimationCompensation, ZigzagScanAndLRL).*
+
 This project implements a simplified, custom video encoder in MATLAB. It processes raw YUV video files (specifically the Luminance/Y component) and demonstrates fundamental video compression techniques including Intra-frame and Inter-frame encoding, Motion Estimation, DCT, Quantization, and Entropy Coding.
 
 ## Overview
@@ -23,30 +26,3 @@ The encoder is designed to process the `foreman_qcif.yuv` video sequence (Resolu
     *   Calculates the Residual (Error) between the current frame and predicted frame.
     *   Encodes the Residual using the same $8 \times 8$ DCT, Quantization ($Q_{inter}$), Zigzag, and Huffman pipeline.
     *   Encodes the Motion Vectors using a dedicated Huffman table.
-
-## Prerequisites
-
-*   **MATLAB** (Base installation is sufficient, no specific toolboxes are strictly required for the core custom functions).
-*   Input video file: `foreman_qcif.yuv` (QCIF format, $176 \times 144$) placed in the root directory.
-
-## How to Run
-
-1. Ensure all `.m` files and `foreman_qcif.yuv` are in the same directory.
-2. Open MATLAB and navigate to the project directory.
-3. Run the main script:
-```matlab
-   Main
-```
-4. The script will process the frames and output progress in the console. 
-5. Upon completion, two new files will be generated:
-   *   `EncodedVideo.mpeg`: The custom compressed bitstream.
-   *   `reconstructed.yuv`: The reconstructed Y-component video (can be viewed using a raw YUV player like YUV Player, set to Y-only or grayscale, $176 \times 144$).
-
-## Project Structure
-
-*   `Main.m`: The main orchestrator script that runs the frame loop, handles file I/O, and manages the reference frames.
-*   `ProcessBlock.m`: Handles $8 \times 8$ block DCT, Quantization, Dequantization, and Inverse DCT. Returns both quantized coefficients and the reconstructed image block.
-*   `MotionEstimationCompensation.m`: Performs block-matching motion estimation ($16 \times 16$ blocks) and generates the motion-compensated predicted frame.
-*   `ZigzagScanAndLRL.m`: Converts 2D quantized DCT blocks into a 1D zigzag array and computes the Level-Run-Length sequence.
-*   `HuffCoding.m` & `HuffCodingMV.m`: Applies Huffman entropy coding to the LRL sequences and Motion Vectors, respectively.
-*   `WriteFrame.m`: Handles writing the reconstructed matrices to the `reconstructed.yuv` file in the correct row-major format.
