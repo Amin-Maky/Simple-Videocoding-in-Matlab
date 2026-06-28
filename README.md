@@ -26,3 +26,6 @@ The encoder is designed to process the `foreman_qcif.yuv` video sequence (Resolu
     *   Calculates the Residual (Error) between the current frame and predicted frame.
     *   Encodes the Residual using the same $8 \times 8$ DCT, Quantization ($Q_{inter}$), Zigzag, and Huffman pipeline.
     *   Encodes the Motion Vectors using a dedicated Huffman table.
+## Tools & Future Work
+*   **View Raw Video:** You can use `YUVviewer.exe` to visualize and inspect the raw YUV video files used in this project.
+*   **Future Development:**  I plan to design and implement the corresponding video decoder to complete the encoding/decoding loop.
