@@ -1,0 +1,27 @@
+# --- MATLAB generated files ---
+*.asv
+*.log
+*.mat
+*.fig
+*.mex*
+*.prj
+*.mlapp
+*.mlappinstall
+*.slx
+*.mdl
+
+# --- IDE and environment settings ---
+.DS_Store
+.settings/
+.vscode/
+.idea/
+
+# --- Project outputs and working data (Don't track heavy files) ---
+*.mpeg
+*.yuv
+*.bin
+*.dat
+*.tmp
+# --- Folders ---
+# اگر پوشه خاصی برای تست یا خروجی داری اینجا اضافه کن
+Data Files/
