@@ -7,7 +7,7 @@ The codec currently operates on raw YUV video files (specifically the QCIF `176x
 ## System Architecture
 
 ### Encoder Pipeline
-![Encoder Architecture](EncoderBlockDesin.png)
+![Encoder Architecture](EncoderBlockDesing.png)
 
 ### Decoder Pipeline
 ![Decoder Architecture](DecoderBlockDesing.png)
