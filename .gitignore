@@ -9,6 +9,7 @@
 *.mlappinstall
 *.slx
 *.mdl
+*.drawio
 
 # --- IDE and environment settings ---
 .DS_Store
@@ -17,11 +18,11 @@
 .idea/
 
 # --- Project outputs and working data (Don't track heavy files) ---
-*.mpeg
-*.yuv
-*.bin
-*.dat
-*.tmp
+# *.mpeg
+# *.yuv
+# *.bin
+# *.dat
+# *.tmp
+
 # --- Folders ---
-# اگر پوشه خاصی برای تست یا خروجی داری اینجا اضافه کن
-Data Files/
+# Data Files/
